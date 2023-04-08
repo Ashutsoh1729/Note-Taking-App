@@ -1,0 +1,139 @@
+.root {
+    display: block;
+
+}
+
+
+#input {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    z-index: 999999;
+    position: fixed;
+    margin: 5vh auto 5vh;
+    min-width: 50vw !important;
+    /* position: absolute; */
+    bottom: 0;
+    background-color: white;
+}
+
+.input-area{
+    display: flex;
+    flex-direction: row;
+    width: 988px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+textarea {
+    width: 654px;
+    height: fit-content;
+    max-height: 50px;
+    font-size: 16px;
+    resize: none;
+    font-family: sans-serif;
+    border: 2px solid rgb(141, 141, 141);
+    border-radius: 5px;
+    overflow-y: hidden;
+    /* box-sizing: border-box; */
+    cursor: text;
+    /* white-space: pre-wrap;
+    overflow-wrap: break-word; */
+    column-count: initial !important;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+}
+
+.div-btn{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.btn-1{
+    display: inline;
+    margin-right: 20px;
+}
+
+.btn-1,
+.btn-2
+{
+
+    height: 50px; 
+    width: 115px;
+    background-color: #5263FC;
+    border-radius: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease-in-out;
+    border: none;
+}
+
+.btn{
+    font-family: 'inter';
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-1:active,
+.btn-2:active{
+    transform: scale(0.9);
+}
+
+.notes-container{
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto 20vh;
+
+}
+
+/* To apply border styling to notes elements */
+.n-bd{
+    border: 1px solid rgb(99, 98, 98);
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 70vw;
+}
+
+.t-fam{
+    font-family: sans-serif;
+}
+
+.t-cen{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-warp{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.t-lef{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
