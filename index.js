@@ -75,8 +75,10 @@ function shownotes() {
         html += `
         <div class="cardnotes n-bd">
             <div class="card-body">
-                <h1 class="card-title t-cen">Notes ${index + 1}</h1>
-                <p class="card-text t-fam f-warp">${currentValue}</p>
+            <div class = "note-text">
+            <h1 class="card-title">Notes ${index + 1}</h1>
+            <p class="card-text t-fam f-warp">${currentValue}</p>
+            </div>
                 
 
                 <div class="btn-notes t-lef ">
@@ -128,7 +130,7 @@ function deleteNote(index) {
 // Function to edit the note
 
 function editNote(index) {
-    alert("Edit note button has been clicked.")
+    // alert("Edit note button has been clicked.")
     notes = localStorage.getItem("notes")
     if (notes === null) {
         notesArray = []
